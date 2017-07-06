@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "cute.zhangxing.com.zxingtest"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+
+    }
+}
+
+dependencies {
+
+
+    compile project(':library')
+}
