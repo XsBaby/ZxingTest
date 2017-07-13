@@ -8,7 +8,7 @@
         android:id="@+id/et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="把想让人家看到的字打上就行了(徐倩倩专用)"/>
+        android:hint="输入你想打的字吧~~"/>
 
     <LinearLayout
         android:id="@+id/group"
